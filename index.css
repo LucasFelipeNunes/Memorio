@@ -4,8 +4,18 @@ h1 {
     font-size: 72px;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 h1 span{
     color: yellowgreen;
+}
+
+li{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 1rem;
 }
 
 body {
@@ -14,18 +24,32 @@ body {
     background-blend-mode: multiply;
 }
 
-main {
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 10px;
+}
+
+.white-section {
     background-color: rgba(255, 255, 255, 0.863);
     width: 50%;
     padding: 30px;
     margin: auto;
     border-radius: 20px;
+    margin-top: 3vh;
+}
+
+.hidden {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
-    main {
+    .white-section {
         width: 90%;
-        margin: 10px;
     }
 
     h1 {
